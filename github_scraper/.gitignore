@@ -1,0 +1,21 @@
+# Environment files with tokens
+.env
+
+# Output directories
+output/
+*/output/
+
+# Log files
+*.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
