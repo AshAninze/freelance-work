@@ -55,6 +55,22 @@ Scrape all repositories from a user:
 python github_scraper.py USERNAME --token YOUR_GITHUB_TOKEN
 ```
 
+### Python Module Usage
+
+You can also import and use the scraper as a Python module:
+
+```python
+from github_scraper import GitHubScraper
+
+# Create scraper instance
+scraper = GitHubScraper(token='your_token_here')
+
+# Scrape all repos for a user
+scraper.scrape_user_repositories('username', output_dir='output')
+```
+
+See `example_usage.py` for a complete example.
+
 ### Using Environment Variable
 
 You can set your GitHub token as an environment variable to avoid typing it each time:
