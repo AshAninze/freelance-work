@@ -57,8 +57,9 @@ class GitHubScraper:
         self.base_url = "https://api.github.com"
         self.session = requests.Session()
         self.session.headers.update({
-            'Authorization': f'token {token}',
-            'Accept': 'application/vnd.github.v3+json',
+            'Authorization': f'Bearer {token}',
+            'Accept': 'application/vnd.github+json',
+            'X-GitHub-Api-Version': '2022-11-28',
             'User-Agent': 'GitHub-Scraper/1.0'
         })
         logger.info("GitHub scraper initialized")
